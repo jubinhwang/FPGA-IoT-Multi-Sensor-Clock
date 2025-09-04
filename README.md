@@ -5,7 +5,6 @@ A Verilog-based multi-function digital clock on a Basys3 FPGA, featuring real-ti
 
 [![Made with Verilog](https://img.shields.io/badge/Made%20with-Verilog-1f425f.svg)](https://verilog.org/)
 [![Board-Basys3](https://img.shields.io/badge/FPGA%20Board-Basys3-blue.svg)](https://digilent.com/reference/programmable-logic/basys-3/start)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 'Harman semicon academi 2기'프로젝트로, Verilog HDL을 사용하여 Xilinx Artix-7 Basys3 FPGA 보드에 구현한 다기능 디지털 시계입니다.
 

@@ -32,8 +32,8 @@ A Verilog-based multi-function digital clock on a Basys3 FPGA, featuring real-ti
 2.  **중앙 처리부 (FPGA)**: 시스템의 핵심으로, 모든 입력 데이터를 처리합니다. 시계 로직을 실행하고, 센서 값을 계산하며, 전체 시스템의 상태를 관리합니다.
 3.  **출력 및 전송부**: 현재 모드의 정보를 7-세그먼트에 표시하고, 형식화된 데이터 문자열을 UART를 통해 PC로 전송합니다.
 
-![시스템 구성도](https://i.imgur.com/your-image-url-2.png) 
-*추신: 발표자료의 시스템 구성도 이미지를 캡처하여 업로드한 후 위 링크를 교체하세요.*
+<img width="1070" height="496" alt="verilog_최종프로젝트" src="https://github.com/user-attachments/assets/2b217596-094b-4710-93f6-abdfcfe50d6c" />
+
 
 ## 💻 UART 명령어 인터페이스
 

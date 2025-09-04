@@ -11,8 +11,8 @@ A Verilog-based multi-function digital clock on a Basys3 FPGA, featuring real-ti
 
 본 프로젝트는 2개의 센서로 환경 데이터를 수집하고 PC와의 안정적인 데이터 통신을 구현하여, 스마트 IoT 시스템의 기반을 설계하는 것을 목표로 합니다.
 
-![Basys3 보드와 센서가 연결된 사진](https://i.imgur.com/your-image-url.png) 
-*추신: 발표자료의 동작 사진 등을 캡처하여 업로드한 후 위 링크를 교체하세요.*
+https://github.com/user-attachments/assets/2ef03cd9-a14e-4b56-966e-1b3aa9319db9
+
 
 ## ✨ 주요 기능
 

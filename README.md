@@ -7,9 +7,9 @@ A Verilog-based multi-function digital clock on a Basys3 FPGA, featuring real-ti
 [![Board-Basys3](https://img.shields.io/badge/FPGA%20Board-Basys3-blue.svg)](https://digilent.com/reference/programmable-logic/basys-3/start)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-'Semicon_Academi 2기' 최종 프로젝트로, Verilog HDL을 사용하여 Xilinx Artix-7 Basys3 FPGA 보드에 구현한 다기능 디지털 시계입니다.
+'Harman semicon academi 2기'프로젝트로, Verilog HDL을 사용하여 Xilinx Artix-7 Basys3 FPGA 보드에 구현한 다기능 디지털 시계입니다.
 
-본 프로젝트는 다양한 센서로 환경 데이터를 수집하고 PC와의 안정적인 데이터 통신을 구현하여, 스마트 IoT 시스템의 기반을 설계하는 것을 목표로 합니다.
+본 프로젝트는 2개의 센서로 환경 데이터를 수집하고 PC와의 안정적인 데이터 통신을 구현하여, 스마트 IoT 시스템의 기반을 설계하는 것을 목표로 합니다.
 
 ![Basys3 보드와 센서가 연결된 사진](https://i.imgur.com/your-image-url.png) 
 *추신: 발표자료의 동작 사진 등을 캡처하여 업로드한 후 위 링크를 교체하세요.*
@@ -57,7 +57,7 @@ PC의 시리얼 터미널 프로그램(예: Tera Term, PuTTY)을 이용해 **960
 1.  이 저장소를 로컬 컴퓨터에 복제(Clone)합니다.
 2.  Xilinx Vivado에서 프로젝트를 엽니다.
 3.  디자인을 합성(Synthesize)하고 Basys3 보드에 비트스트림을 업로드합니다.
-4.  제약 파일(constraints file)에 명시된 대로 DHT11 및 초음파 센서를 Pmod 커넥터에 연결합니다.
+4.  constraints file에 명시된 대로 DHT11 및 초음파 센서를 Pmod 커넥터에 연결합니다.
 5.  Basys3 보드를 USB를 통해 PC에 연결합니다.
 6.  시리얼 터미널을 열고, 올바른 COM 포트에 연결한 후 Baud Rate를 9600으로 설정합니다.
 7.  보드의 스위치/버튼 또는 위에 명시된 UART 명령어를 사용하여 장치와 상호작용합니다.

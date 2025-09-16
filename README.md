@@ -77,28 +77,44 @@ PC의 시리얼 터미널 프로그램(예: Tera Term, PuTTY)을 이용해 **960
 ```bash
 git clone [https://github.com/jubinhwang/FPGA-IoT-Multi-Sensor-Clock.git](https://github.com/jubinhwang/FPGA-IoT-Multi-Sensor-Clock.git)
 
-#### 2. ⚙️ FPGA 빌드 및 프로그래밍
+네, 이미지의 서식이 깨져서 이상하게 보이는 것 같습니다. GitHub 마크다운(Markdown) 문법이 잘못 적용된 것으로 보입니다.
 
+제가 전체 내용을 깔끔하고 정상적으로 표시되도록 수정해서 복사-붙여넣기 할 수 있는 코드로 만들어 드릴게요.
+
+Markdown
+
+### 🛠️ 설치 및 실행 절차 (Step-by-Step Guide)
+
+#### 1. 📂 프로젝트 다운로드 및 설정
+
+먼저, GitHub 저장소의 파일을 PC로 복제(clone)하고 Vivado에서 프로젝트를 엽니다.
+
+```bash
+git clone [https://github.com/jubinhwang/FPGA-IoT-Multi-Sensor-Clock.git](https://github.com/jubinhwang/FPGA-IoT-Multi-Sensor-Clock.git)
+2. ⚙️ FPGA 빌드 및 프로그래밍
 Vivado에서 디자인을 합성하고 구현하여 FPGA에 업로드합니다.
 
-1.  Vivado에서 `sources_1`의 소스 파일과 `constrs_1`의 제약 조건 파일을 사용하여 프로젝트를 설정합니다.
-2.  **`Generate Bitstream`**을 클릭하여 `.bit` 파일을 생성합니다.
-3.  **Hardware Manager**를 열고, Basys3 보드를 PC에 연결한 후 생성된 비트스트림을 업로드합니다.
+Vivado에서 sources_1의 소스 파일과 constrs_1의 제약 조건 파일을 사용하여 프로젝트를 설정합니다.
 
-#### 3. 🔌 하드웨어 연결
+**Generate Bitstream**을 클릭하여 .bit 파일을 생성합니다.
 
-> ⚠️ **주의**: 제약 조건 파일(`constrs_1`)에 명시된 핀 번호를 정확히 확인하고 센서를 연결하세요.
+Hardware Manager를 열고, Basys3 보드를 PC에 연결한 후 생성된 비트스트림을 업로드합니다.
 
-1.  **DHT11** 및 **초음파 센서**를 Basys3 보드의 **Pmod 커넥터**에 연결합니다.
-2.  USB 케이블을 사용하여 Basys3 보드를 PC에 연결합니다.
+3. 🔌 하드웨어 연결
+⚠️ 주의: 제약 조건 파일(constrs_1)에 명시된 핀 번호를 정확히 확인하고 센서를 연결하세요.
 
-#### 4. 🖥️ 시리얼 통신 및 기능 테스트
+DHT11 및 초음파 센서를 Basys3 보드의 Pmod 커넥터에 연결합니다.
 
+USB 케이블을 사용하여 Basys3 보드를 PC에 연결합니다.
+
+4. 🖥️ 시리얼 통신 및 기능 테스트
 시리얼 터미널을 통해 센서 값을 모니터링하고 시계를 제어합니다.
 
-1.  시리얼 터미널을 실행하고 Basys3 보드에 할당된 **COM 포트**에 연결합니다.
-2.  **Baud Rate**를 **9600**으로 설정합니다.
-3.  보드의 스위치와 버튼을 조작하거나 UART 명령어를 전송하여 모든 기능이 정상적으로 동작하는지 확인합니다.
+시리얼 터미널을 실행하고 Basys3 보드에 할당된 COM 포트에 연결합니다.
+
+Baud Rate를 9600으로 설정합니다.
+
+보드의 스위치와 버튼을 조작하거나 UART 명령어를 전송하여 모든 기능이 정상적으로 동작하는지 확인합니다.
 
 ## 📈 개선 및 보완점
 

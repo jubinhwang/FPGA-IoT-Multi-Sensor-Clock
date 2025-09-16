@@ -51,15 +51,54 @@ PC의 시리얼 터미널 프로그램(예: Tera Term, PuTTY)을 이용해 **960
 | `u`, `d`, `l`, `r` | 설정 모드에서 값을 조정(Up/Down/Left/Right)하거나, 스톱워치/타이머를 실행/정지(`r`)합니다. |
 | `c` | 스톱워치를 초기화(Clear)합니다. |
 
-## 🚀 시작하기
+## 🚀 시작하기 (Getting Started)
 
-1.  이 저장소를 로컬 컴퓨터에 복제(Clone)합니다.
-2.  Xilinx Vivado에서 프로젝트를 엽니다.
-3.  디자인을 합성(Synthesize)하고 Basys3 보드에 비트스트림을 업로드합니다.
-4.  constraints file에 명시된 대로 DHT11 및 초음파 센서를 Pmod 커넥터에 연결합니다.
-5.  Basys3 보드를 USB를 통해 PC에 연결합니다.
-6.  시리얼 터미널을 열고, 올바른 COM 포트에 연결한 후 Baud Rate를 9600으로 설정합니다.
-7.  보드의 스위치/버튼 또는 위에 명시된 UART 명령어를 사용하여 장치와 상호작용합니다.
+이 프로젝트를 실제 **Basys3 보드**에서 구현하고 멀티 센서 시계를 테스트하기 위한 단계별 가이드입니다.
+
+---
+
+### ✅ 사전 요구사항 (Prerequisites)
+
+프로젝트를 진행하기 전, 아래의 개발 환경과 부품이 준비되어 있는지 확인해주세요.
+
+* 💻 **FPGA 개발 환경**: **Xilinx Vivado**
+* 🤖 **FPGA 보드**: **Digilent Basys3 보드**
+* 🌡️ **센서**: **DHT11** (온습도 센서), **초음파 센서** (거리 측정)
+* 📡 **시리얼 통신**: PuTTY, Tera Term 등 시리얼 터미널 프로그램
+
+---
+
+### 🛠️ 설치 및 실행 절차 (Step-by-Step Guide)
+
+#### 1. 📂 프로젝트 다운로드 및 설정
+
+먼저, GitHub 저장소의 파일을 PC로 복제(clone)하고 Vivado에서 프로젝트를 엽니다.
+
+```bash
+git clone [https://github.com/jubinhwang/FPGA-IoT-Multi-Sensor-Clock.git](https://github.com/jubinhwang/FPGA-IoT-Multi-Sensor-Clock.git)
+
+#### 2. ⚙️ FPGA 빌드 및 프로그래밍
+
+Vivado에서 디자인을 합성하고 구현하여 FPGA에 업로드합니다.
+
+1.  Vivado에서 `sources_1`의 소스 파일과 `constrs_1`의 제약 조건 파일을 사용하여 프로젝트를 설정합니다.
+2.  **`Generate Bitstream`**을 클릭하여 `.bit` 파일을 생성합니다.
+3.  **Hardware Manager**를 열고, Basys3 보드를 PC에 연결한 후 생성된 비트스트림을 업로드합니다.
+
+#### 3. 🔌 하드웨어 연결
+
+> ⚠️ **주의**: 제약 조건 파일(`constrs_1`)에 명시된 핀 번호를 정확히 확인하고 센서를 연결하세요.
+
+1.  **DHT11** 및 **초음파 센서**를 Basys3 보드의 **Pmod 커넥터**에 연결합니다.
+2.  USB 케이블을 사용하여 Basys3 보드를 PC에 연결합니다.
+
+#### 4. 🖥️ 시리얼 통신 및 기능 테스트
+
+시리얼 터미널을 통해 센서 값을 모니터링하고 시계를 제어합니다.
+
+1.  시리얼 터미널을 실행하고 Basys3 보드에 할당된 **COM 포트**에 연결합니다.
+2.  **Baud Rate**를 **9600**으로 설정합니다.
+3.  보드의 스위치와 버튼을 조작하거나 UART 명령어를 전송하여 모든 기능이 정상적으로 동작하는지 확인합니다.
 
 ## 📈 개선 및 보완점
 

@@ -77,20 +77,6 @@ PC의 시리얼 터미널 프로그램(예: Tera Term, PuTTY)을 이용해 **960
 ```bash
 git clone [https://github.com/jubinhwang/FPGA-IoT-Multi-Sensor-Clock.git](https://github.com/jubinhwang/FPGA-IoT-Multi-Sensor-Clock.git)
 
-네, 이미지의 서식이 깨져서 이상하게 보이는 것 같습니다. GitHub 마크다운(Markdown) 문법이 잘못 적용된 것으로 보입니다.
-
-제가 전체 내용을 깔끔하고 정상적으로 표시되도록 수정해서 복사-붙여넣기 할 수 있는 코드로 만들어 드릴게요.
-
-Markdown
-
-### 🛠️ 설치 및 실행 절차 (Step-by-Step Guide)
-
-#### 1. 📂 프로젝트 다운로드 및 설정
-
-먼저, GitHub 저장소의 파일을 PC로 복제(clone)하고 Vivado에서 프로젝트를 엽니다.
-
-```bash
-git clone [https://github.com/jubinhwang/FPGA-IoT-Multi-Sensor-Clock.git](https://github.com/jubinhwang/FPGA-IoT-Multi-Sensor-Clock.git)
 2. ⚙️ FPGA 빌드 및 프로그래밍
 Vivado에서 디자인을 합성하고 구현하여 FPGA에 업로드합니다.
 

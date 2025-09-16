@@ -51,7 +51,8 @@ PC의 시리얼 터미널 프로그램(예: Tera Term, PuTTY)을 이용해 **960
 | `u`, `d`, `l`, `r` | 설정 모드에서 값을 조정(Up/Down/Left/Right)하거나, 스톱워치/타이머를 실행/정지(`r`)합니다. |
 | `c` | 스톱워치를 초기화(Clear)합니다. |
 
-### 🚀 시작하기 (Getting Started)
+## 🚀 시작하기 (Getting Started)
+
 이 프로젝트를 실제 **Basys3 보드**에서 구현하고 멀티 센서 시계를 테스트하기 위한 단계별 가이드입니다.
 
 #### ✅ 사전 요구사항 (Prerequisites)
